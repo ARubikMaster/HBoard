@@ -1,0 +1,44 @@
+plugins {
+    // The Android Application plugin (updated version for Gradle 9.x)
+    id 'com.android.application' version '8.7.0'
+    // The Kotlin plugin
+    id 'org.jetbrains.kotlin.android' version '2.1.0'
+}
+
+android {
+    namespace 'com.example.keyboard'
+    // 'compileSdkVersion' is now 'compileSdk'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.keyboard"
+        minSdk 21
+        // 'targetSdkVersion' is now 'targetSdk'
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+dependencies {
+    // This pulls in your keyboard.aar from the /lib folder
+    implementation(name: 'keyboard', ext: 'aar')
+    
+    // Modern Kotlin and AndroidX support
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:2.1.0"
+    implementation "androidx.core:core-ktx:1.13.1"
+}

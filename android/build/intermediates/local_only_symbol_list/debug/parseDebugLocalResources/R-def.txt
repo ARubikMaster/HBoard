@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+id keyboard_view
+layout keyboard_view
+layout preview
+xml method
+xml qwerty

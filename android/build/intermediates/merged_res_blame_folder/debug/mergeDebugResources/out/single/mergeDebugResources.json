@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.example.keyboard-debug-11:/xml_qwerty.xml.flat",
+        "source": "com.example.keyboard-main-13:/xml/qwerty.xml"
+    },
+    {
+        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/layout_keyboard_view.xml.flat",
+        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/layout/keyboard_view.xml"
+    },
+    {
+        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/layout_preview.xml.flat",
+        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/layout/preview.xml"
+    },
+    {
+        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/xml_qwerty.xml.flat",
+        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/xml/qwerty.xml"
+    },
+    {
+        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/xml_method.xml.flat",
+        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/xml/method.xml"
+    }
+]
