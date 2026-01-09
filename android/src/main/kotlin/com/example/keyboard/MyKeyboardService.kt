@@ -9,13 +9,21 @@ import keyboard.Keyboard as GoKeyboard
 
 class MyKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionListener {
 
-    // 1. Declare at class level (Top of the class)
     private var keyboardView: KeyboardView? = null
+    private var qwertyKeyboard: Keyboard? = null
+    private var symbolsKeyboard: Keyboard? = null
+    private var mathKeyboard: Keyboard? = null
+    private var status = "qwerty"
 
     override fun onCreateInputView(): View {
-        // 2. Assign the view to the class-level variable
         keyboardView = layoutInflater.inflate(R.layout.keyboard_view, null) as KeyboardView
-        keyboardView?.keyboard = Keyboard(this, R.xml.qwerty)
+        
+        // Initialize all layouts
+        qwertyKeyboard = Keyboard(this, R.xml.qwerty)
+        symbolsKeyboard = Keyboard(this, R.xml.symbols)
+	mathKeyboard = Keyboard(this, R.xml.mathsymbols)
+        
+        keyboardView?.keyboard = qwertyKeyboard
         keyboardView?.setOnKeyboardActionListener(this)
         return keyboardView!!
     }
@@ -24,9 +32,23 @@ class MyKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLis
         val ic = currentInputConnection ?: return
 
         when (primaryCode) {
+            -67 -> {
+                status = "symbols"
+                keyboardView?.keyboard = symbolsKeyboard 
+            }
+
+            -68 -> {
+                status = "qwerty"
+                keyboardView?.keyboard = qwertyKeyboard
+            }
+
+            -69 -> {
+                status = "math"
+                keyboardView?.keyboard = mathKeyboard
+            }
+
             -5 -> ic.deleteSurroundingText(1, 0)
-            -1 -> {
-                // 3. Now this reference will work!
+            -1 -> { // Shift (only relevant for QWERTY)
                 keyboardView?.let {
                     it.isShifted = !it.isShifted
                     it.invalidateAllKeys()
@@ -38,15 +60,17 @@ class MyKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLis
                 val isShifted = keyboardView?.isShifted ?: false
                 val result = GoKeyboard.processKey(primaryCode.toLong(), isShifted)
                 ic.commitText(result, 1)
-
-                if (isShifted) {
-                    keyboardView?.isShifted = false
-                    keyboardView?.invalidateAllKeys()
+                
+                // Optional: return to QWERTY after typing a symbol
+                /*
+                if (isSymbols) {
+                    isSymbols = false
+                    keyboardView?.keyboard = qwertyKeyboard
                 }
+                */
             }
         }
     }
-
     override fun onPress(primaryCode: Int) {}
     override fun onRelease(primaryCode: Int) {}
     override fun onText(text: CharSequence?) {}

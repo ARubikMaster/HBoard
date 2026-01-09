@@ -3,5 +3,7 @@ local
 id keyboard_view
 layout keyboard_view
 layout preview
+xml mathsymbols
 xml method
 xml qwerty
+xml symbols

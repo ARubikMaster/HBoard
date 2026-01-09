@@ -210,5 +210,7 @@ int styleable GradientColor_android_endY 11
 int[] styleable GradientColorItem { 0x010101a5, 0x01010514 }
 int styleable GradientColorItem_android_color 0
 int styleable GradientColorItem_android_offset 1
-int xml method 0x7f0b0000
-int xml qwerty 0x7f0b0001
+int xml mathsymbols 0x7f0b0000
+int xml method 0x7f0b0001
+int xml qwerty 0x7f0b0002
+int xml symbols 0x7f0b0003

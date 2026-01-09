@@ -1,11 +1,15 @@
 [
     {
-        "merged": "com.example.keyboard-debug-11:/xml_qwerty.xml.flat",
-        "source": "com.example.keyboard-main-13:/xml/qwerty.xml"
+        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/xml_mathsymbols.xml.flat",
+        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/xml/mathsymbols.xml"
     },
     {
         "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/layout_keyboard_view.xml.flat",
         "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/layout/keyboard_view.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-11:/xml_mathsymbols.xml.flat",
+        "source": "com.example.keyboard-main-13:/xml/mathsymbols.xml"
     },
     {
         "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/layout_preview.xml.flat",
@@ -14,6 +18,10 @@
     {
         "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/xml_qwerty.xml.flat",
         "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/xml/qwerty.xml"
+    },
+    {
+        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/xml_symbols.xml.flat",
+        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/xml/symbols.xml"
     },
     {
         "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/xml_method.xml.flat",
