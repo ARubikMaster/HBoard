@@ -50,6 +50,7 @@ drawable ic_call_answer_video
 drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
+drawable key_bg
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -103,7 +104,11 @@ id action_text
 id actions
 id async
 id blocking
+id btn_clear
+id btn_paste
 id chronometer
+id clipboard_bar
+id clipboard_preview
 id dialog_button
 id edit_text_id
 id forever

@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.inputmethodservice.KeyboardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/keyboard_view"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:keyPreviewLayout="@layout/preview" 
-    android:background="#121212" />
+    android:orientation="vertical"
+    android:background="#121212">
+
+    <LinearLayout
+        android:id="@+id/clipboard_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:visibility="gone" 
+        android:background="#222222">
+
+        <TextView
+            android:id="@+id/clipboard_preview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <Button
+            android:id="@+id/btn_paste"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Paste"
+            android:textSize="12sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#3498db" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Clear"
+            android:textSize="12sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#e74c3c" />
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keyBackground="@drawable/key_bg"
+        android:keyTextColor="#FFFFFF" />
+</LinearLayout>

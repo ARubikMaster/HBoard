@@ -1,5 +1,10 @@
 R_DEF: Internal format may change without notice
 local
+drawable key_bg
+id btn_clear
+id btn_paste
+id clipboard_bar
+id clipboard_preview
 id keyboard_view
 layout keyboard_view
 layout preview
