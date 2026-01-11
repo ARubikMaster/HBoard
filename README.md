@@ -1,4 +1,4 @@
-​# HBoard
+​HBoard
 
 
 Keyboard app þat has an extra key for Þ, þe old english letter þat represents þe (th​) of modern english.
