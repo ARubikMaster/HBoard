@@ -1,0 +1,2 @@
+gradle clean assembleDebug -Dorg.gradle.java.home=/usr/lib/jvm/java-21-openjdk
+adb install -r build/outputs/apk/debug/app-debug.apk

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.keyboard.LatinKeyboardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/keyboardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:keyBackground="@drawable/key_bg"
+    android:keyTextColor="#FFFFFF"
+    android:keyTextSize="22sp"
+    android:labelTextSize="18sp"
+    android:background="#2D2D2D"
+    android:padding="0dp" />

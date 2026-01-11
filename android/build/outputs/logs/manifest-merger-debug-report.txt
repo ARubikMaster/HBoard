@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:2:1-23:12
-MERGED from [:keyboard:] /home/gregory/.gradle/caches/9.2.0/transforms/b9acd12c870d7acc37a7c3335d39c80d/transformed/jetified-keyboard/AndroidManifest.xml:1:1-2:50
+ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [:keyboard:] /home/gregory/.gradle/caches/9.2.0/transforms/995e9dedef53556ad38dbf0f3f33aaa6/transformed/jetified-keyboard/AndroidManifest.xml:1:1-2:50
 MERGED from [androidx.core:core:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/c75be4b2d48aed3e59123f936b29b3b9/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.core:core-ktx:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/6f397ff5b96c516bcd67affd38ea90fd/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/gregory/.gradle/caches/9.2.0/transforms/6070539a96070e2b7c8deba30ed873a0/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
@@ -25,9 +25,13 @@ MERGED from [androidx.tracing:tracing:1.0.0] /home/gregory/.gradle/caches/9.2.0/
 		INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.VIBRATE
+ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:4:22-63
 application
-ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:5:5-21:19
-INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:5:5-21:19
+ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:6:5-22:19
+INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:6:5-22:19
 MERGED from [androidx.core:core:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/c75be4b2d48aed3e59123f936b29b3b9/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/c75be4b2d48aed3e59123f936b29b3b9/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/gregory/.gradle/caches/9.2.0/transforms/759e4dae8e648d0d8899c5ae22a08b8e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
@@ -41,37 +45,37 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/gregory/.gradle/cache
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/c75be4b2d48aed3e59123f936b29b3b9/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:6:9-34
+		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:7:9-34
 	android:theme
-		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:7:9-56
+		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:8:9-56
 service#com.example.keyboard.MyKeyboardService
-ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:9:9-20:19
+ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:10:9-21:19
 	android:label
-		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:11:13-38
+		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:12:13-38
 	android:exported
-		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:13:13-36
+		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:14:13-36
 	android:permission
-		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:12:13-70
+		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:13:13-70
 	android:name
-		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:10:13-46
+		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:11:13-46
 intent-filter#action:name:android.view.InputMethod
-ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:14:13-16:29
+ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:15:13-17:29
 action#android.view.InputMethod
-ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:15:17-67
+ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:16:17-67
 	android:name
-		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:15:25-64
+		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:16:25-64
 meta-data#android.view.im
-ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:17:13-19:50
+ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:18:13-20:50
 	android:resource
-		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:19:17-47
+		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:20:17-47
 	android:name
-		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:18:17-47
+		ADDED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:19:17-47
 uses-sdk
 INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml
 INJECTED from /home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml
-MERGED from [:keyboard:] /home/gregory/.gradle/caches/9.2.0/transforms/b9acd12c870d7acc37a7c3335d39c80d/transformed/jetified-keyboard/AndroidManifest.xml:2:1-39
-MERGED from [:keyboard:] /home/gregory/.gradle/caches/9.2.0/transforms/b9acd12c870d7acc37a7c3335d39c80d/transformed/jetified-keyboard/AndroidManifest.xml:2:1-39
+MERGED from [:keyboard:] /home/gregory/.gradle/caches/9.2.0/transforms/995e9dedef53556ad38dbf0f3f33aaa6/transformed/jetified-keyboard/AndroidManifest.xml:2:1-39
+MERGED from [:keyboard:] /home/gregory/.gradle/caches/9.2.0/transforms/995e9dedef53556ad38dbf0f3f33aaa6/transformed/jetified-keyboard/AndroidManifest.xml:2:1-39
 MERGED from [androidx.core:core:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/c75be4b2d48aed3e59123f936b29b3b9/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/c75be4b2d48aed3e59123f936b29b3b9/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/6f397ff5b96c516bcd67affd38ea90fd/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:5:5-44

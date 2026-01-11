@@ -44,12 +44,18 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+drawable ic_backspace
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
 drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
+drawable ic_enter
+drawable ic_settings
+drawable ic_shift
+drawable ic_shift_active
+drawable ic_shift_caps
 drawable key_bg
 drawable notification_action_background
 drawable notification_bg
@@ -64,6 +70,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable popup_container_bg
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -105,6 +112,7 @@ id actions
 id async
 id blocking
 id btn_clear
+id btn_close_settings
 id btn_paste
 id chronometer
 id clipboard_bar
@@ -124,8 +132,14 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id radio_th
+id radio_thorn_type
+id radio_þ
 id right_icon
 id right_side
+id settings_panel
+id switch_thorn_side
+id switch_vibrate
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -155,6 +169,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout popup_layer
 layout preview
 string androidx_startup
 string call_notification_answer_action
@@ -180,5 +195,7 @@ styleable GradientColor android_startColor android_endColor android_type android
 styleable GradientColorItem android_color android_offset
 xml mathsymbols
 xml method
-xml qwerty
+xml popup
+xml qwerty_left
+xml qwerty_right
 xml symbols

@@ -40,14 +40,15 @@
         <Key android:codes="124" android:keyLabel="|"/>
         <Key android:codes="92" android:keyLabel="\\"/>
         <Key android:codes="191" android:keyLabel="¿"/>
-        <Key android:codes="-5" android:keyLabel="Del" android:keyWidth="14.5%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="-5" android:keyIcon="@drawable/ic_backspace" android:keyWidth="14.5%p" android:keyEdgeFlags="right"/>
     </Row>
 
     <Row>
         <Key android:codes="-68" android:keyLabel="ABC" android:keyEdgeFlags="left"/>
-        <Key android:codes="44" android:keyLabel=","/>
-        <Key android:codes="32" android:keyLabel="Space" android:keyWidth="59.5%p"/>
-        <Key android:codes="46" android:keyLabel="."/>
-        <Key android:codes="-4" android:keyLabel="↵" android:keyEdgeFlags="right"/>
+	<Key android:codes="44" android:keyLabel="," />
+        <Key android:codes="-10" android:keyIcon="@drawable/ic_settings" />
+        <Key android:codes="32" android:keyLabel="Space" android:keyWidth="49.6%p"/>
+        <Key android:codes="46" android:keyLabel="." android:popupKeyboard="@xml/popup" android:popupCharacters=",!?:;…"/>
+	<Key android:codes="-4" android:keyIcon="@drawable/ic_enter" android:keyEdgeFlags="right"/>
     </Row>
 </Keyboard>

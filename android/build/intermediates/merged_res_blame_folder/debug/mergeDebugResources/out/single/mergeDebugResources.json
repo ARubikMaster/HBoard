@@ -1,38 +1,70 @@
 [
     {
-        "merged": "com.example.keyboard-debug-11:/xml_qwerty.xml.flat",
-        "source": "com.example.keyboard-main-13:/xml/qwerty.xml"
+        "merged": "com.example.keyboard-debug-11:/drawable_ic_settings.xml.flat",
+        "source": "com.example.keyboard-main-13:/drawable/ic_settings.xml"
     },
     {
-        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/xml_mathsymbols.xml.flat",
-        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/xml/mathsymbols.xml"
+        "merged": "com.example.keyboard-debug-11:/layout_preview.xml.flat",
+        "source": "com.example.keyboard-main-13:/layout/preview.xml"
     },
     {
-        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/layout_keyboard_view.xml.flat",
-        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/layout/keyboard_view.xml"
-    },
-    {
-        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/layout_preview.xml.flat",
-        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/layout/preview.xml"
+        "merged": "com.example.keyboard-debug-11:/xml_mathsymbols.xml.flat",
+        "source": "com.example.keyboard-main-13:/xml/mathsymbols.xml"
     },
     {
         "merged": "com.example.keyboard-debug-11:/xml_symbols.xml.flat",
         "source": "com.example.keyboard-main-13:/xml/symbols.xml"
     },
     {
-        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/xml_qwerty.xml.flat",
-        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/xml/qwerty.xml"
+        "merged": "com.example.keyboard-debug-11:/layout_keyboard_view.xml.flat",
+        "source": "com.example.keyboard-main-13:/layout/keyboard_view.xml"
     },
     {
-        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/drawable_key_bg.xml.flat",
-        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/drawable/key_bg.xml"
+        "merged": "com.example.keyboard-debug-11:/drawable_ic_shift.xml.flat",
+        "source": "com.example.keyboard-main-13:/drawable/ic_shift.xml"
     },
     {
-        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/xml_symbols.xml.flat",
-        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/xml/symbols.xml"
+        "merged": "com.example.keyboard-debug-11:/layout_popup_layer.xml.flat",
+        "source": "com.example.keyboard-main-13:/layout/popup_layer.xml"
     },
     {
-        "merged": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-debug-11:/xml_method.xml.flat",
-        "source": "/home/gregory/.gradle/daemon/9.2.0/com.example.keyboard-main-13:/xml/method.xml"
+        "merged": "com.example.keyboard-debug-11:/xml_qwerty_right.xml.flat",
+        "source": "com.example.keyboard-main-13:/xml/qwerty_right.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-11:/drawable_ic_backspace.xml.flat",
+        "source": "com.example.keyboard-main-13:/drawable/ic_backspace.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-11:/drawable_ic_shift_active.xml.flat",
+        "source": "com.example.keyboard-main-13:/drawable/ic_shift_active.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-11:/xml_popup.xml.flat",
+        "source": "com.example.keyboard-main-13:/xml/popup.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-11:/drawable_ic_shift_caps.xml.flat",
+        "source": "com.example.keyboard-main-13:/drawable/ic_shift_caps.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-11:/drawable_popup_container_bg.xml.flat",
+        "source": "com.example.keyboard-main-13:/drawable/popup_container_bg.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-11:/xml_method.xml.flat",
+        "source": "com.example.keyboard-main-13:/xml/method.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-11:/drawable_key_bg.xml.flat",
+        "source": "com.example.keyboard-main-13:/drawable/key_bg.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-11:/xml_qwerty_left.xml.flat",
+        "source": "com.example.keyboard-main-13:/xml/qwerty_left.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-11:/drawable_ic_enter.xml.flat",
+        "source": "com.example.keyboard-main-13:/drawable/ic_enter.xml"
     }
 ]

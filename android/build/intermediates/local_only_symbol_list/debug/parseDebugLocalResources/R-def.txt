@@ -1,14 +1,31 @@
 R_DEF: Internal format may change without notice
 local
+drawable ic_backspace
+drawable ic_enter
+drawable ic_settings
+drawable ic_shift
+drawable ic_shift_active
+drawable ic_shift_caps
 drawable key_bg
+drawable popup_container_bg
 id btn_clear
+id btn_close_settings
 id btn_paste
 id clipboard_bar
 id clipboard_preview
 id keyboard_view
+id radio_th
+id radio_thorn_type
+id radio_þ
+id settings_panel
+id switch_thorn_side
+id switch_vibrate
 layout keyboard_view
+layout popup_layer
 layout preview
 xml mathsymbols
 xml method
-xml qwerty
+xml popup
+xml qwerty_left
+xml qwerty_right
 xml symbols
