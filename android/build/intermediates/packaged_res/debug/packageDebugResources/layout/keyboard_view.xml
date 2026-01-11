@@ -3,28 +3,32 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#121212">
+    android:background="?attr/colorSurfaceContainerLowest">
 
     <LinearLayout
         android:id="@+id/clipboard_bar"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:orientation="horizontal"
         android:padding="4dp"
-        android:visibility="gone" 
-        android:background="#222222">
+        android:visibility="gone"
+        android:background="?attr/colorSurfaceContainerHigh"
+        android:gravity="center_vertical">
 
         <TextView
             android:id="@+id/clipboard_preview"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textColor="#AAAAAA"
-            android:textSize="12sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="13sp"
             android:gravity="center_vertical"
-            android:paddingStart="8dp"
+            android:paddingStart="12dp"
             android:singleLine="true"
-            android:ellipsize="end" />
+            android:ellipsize="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground" />
 
         <Button
             android:id="@+id/btn_paste"
@@ -33,7 +37,7 @@
             android:text="Paste"
             android:textSize="12sp"
             style="?android:attr/borderlessButtonStyle"
-            android:textColor="#3498db" />
+            android:textColor="?attr/colorPrimary" />
 
         <Button
             android:id="@+id/btn_clear"
@@ -42,78 +46,70 @@
             android:text="Clear"
             android:textSize="12sp"
             style="?android:attr/borderlessButtonStyle"
-            android:textColor="#e74c3c" />
+            android:textColor="?attr/colorError" />
     </LinearLayout>
-    
+
     <LinearLayout
-	android:id="@+id/settings_panel"
-	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	android:orientation="vertical"
-	android:padding="12dp"
-	android:visibility="gone"
-	android:background="#222222">
+        android:id="@+id/settings_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:background="?attr/colorSurfaceContainerHigh">
 
-	<TextView
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:text="Thorn Settings"
-	    android:textColor="#3498db"
-	    android:textStyle="bold"
-	    android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keyboard Settings"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
 
-	<Switch
-	    android:id="@+id/switch_thorn_side"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:text="Thorn on Right Side"
-	    android:textColor="#FFFFFF"
-	    android:padding="8dp"/>
+        <Switch
+            android:id="@+id/switch_thorn_side"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thorn on Right Side"
+            android:padding="8dp"/>
 
-	<TextView
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:text="Select Thorn Variant:"
-	    android:textColor="#AAAAAA"
-	    android:textSize="12sp"
-	    android:layout_marginTop="8dp"/>
+        <RadioGroup
+            android:id="@+id/radio_thorn_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="8dp">
+            <RadioButton android:id="@+id/radio_þ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="þ" />
+            <RadioButton android:id="@+id/radio_th" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ð" android:layout_marginStart="24dp"/>
+        </RadioGroup>
 
-	<RadioGroup
-	    android:id="@+id/radio_thorn_type"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:orientation="horizontal">
-	    <RadioButton android:id="@+id/radio_þ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="þ" android:textColor="#FFFFFF"/>
-	    <RadioButton android:id="@+id/radio_th" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ð" android:textColor="#FFFFFF" android:layout_marginStart="20dp"/>
-	</RadioGroup>
+        <Switch
+            android:id="@+id/switch_vibrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vibrate on Keypress"
+            android:padding="8dp"/>
 
-	<Switch
-	    android:id="@+id/switch_vibrate"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:text="Vibrate on Keypress"
-	    android:textColor="#FFFFFF"
-	    android:padding="8dp"
-	    android:layout_marginTop="8dp"/>
-
-	<Button
-	    android:id="@+id/btn_close_settings"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:text="Done"
-	    android:layout_gravity="end"
-	    style="?android:attr/borderlessButtonStyle"
-	    android:textColor="#3498db"/>
+        <Button
+            android:id="@+id/btn_close_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_gravity="end"
+            style="?android:attr/borderlessButtonStyle"/>
     </LinearLayout>
 
     <com.example.keyboard.LatinKeyboardView
-	android:id="@+id/keyboard_view"
-	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	android:keyBackground="@drawable/key_bg"
-	android:keyTextColor="#FFFFFF"
-	android:keyTextSize="18sp"
-	android:labelTextSize="14sp"
-	android:keyPreviewLayout="@null"
-	android:popupLayout="@layout/popup_layer" />
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="260dp"
+        android:keyBackground="@drawable/key_bg"
+        android:keyTextColor="?attr/colorOnSurface"
+        android:keyTextSize="20sp"
+        android:labelTextSize="14sp"
+        android:keyPreviewLayout="@null"
+        android:paddingBottom="4dp"
+        android:popupLayout="@layout/popup_layer" />
+
 </LinearLayout>

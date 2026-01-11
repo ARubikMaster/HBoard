@@ -17,15 +17,29 @@
     <uses-permission android:name="com.example.keyboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
+        android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="true"
-        android:label="HBoard Go"
-        android:theme="@android:style/Theme.NoTitleBar" >
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="HBoard"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyKeyboard" >
+        <activity
+            android:name="com.example.keyboard.OnboardingActivity"
+            android:exported="true"
+            android:label="HBoard Setup" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <service
             android:name="com.example.keyboard.MyKeyboardService"
             android:exported="true"
-            android:label="HBoard Go"
+            android:label="HBoard"
             android:permission="android.permission.BIND_INPUT_METHOD" >
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
@@ -40,6 +54,12 @@
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.keyboard.androidx-startup"
             android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
             <meta-data
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />

@@ -57,11 +57,11 @@
     </Row>
 
     <Row>
-        <Key android:codes="-67" android:keyLabel="\?123" android:keyEdgeFlags="left"/>
+        <Key android:codes="-67" android:keyLabel="\?123" android:keyWidth="14.5%p" android:keyEdgeFlags="left"/>
 	<Key android:codes="44" android:keyLabel="," />
-        <Key android:codes="-10" android:keyIcon="@drawable/ic_settings" />
-        <Key android:codes="32" android:keyLabel="Space" android:keyWidth="49.6%p"/>
+        <Key android:codes="-10" android:keyIcon="@drawable/ic_settings" android:keyWidth="9.6%p"/>
+        <Key android:codes="32" android:keyWidth="39.6%p"/>
         <Key android:codes="46" android:keyLabel="." android:popupKeyboard="@xml/popup" android:popupCharacters=",!?:;…"/>
-        <Key android:codes="-4" android:keyIcon="@drawable/ic_enter" android:keyEdgeFlags="right"/>
+        <Key android:codes="-4" android:keyIcon="@drawable/ic_enter" android:keyWidth="14.5%p" android:keyEdgeFlags="right" android:keyBackground="@drawable/key_accent_bg"/>
     </Row>
 </Keyboard>

@@ -1,19 +1,15 @@
 plugins {
-    // The Android Application plugin (updated version for Gradle 9.x)
     id 'com.android.application' version '8.7.0'
-    // The Kotlin plugin
     id 'org.jetbrains.kotlin.android' version '2.1.0'
 }
 
 android {
     namespace 'com.example.keyboard'
-    // 'compileSdkVersion' is now 'compileSdk'
     compileSdk 34
 
     defaultConfig {
         applicationId "com.example.keyboard"
         minSdk 21
-        // 'targetSdkVersion' is now 'targetSdk'
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -35,10 +31,13 @@ android {
 }
 
 dependencies {
-    // This pulls in your keyboard.aar from the /lib folder
     implementation(name: 'keyboard', ext: 'aar')
     
-    // Modern Kotlin and AndroidX support
+    // Core Kotlin and AndroidX
     implementation "org.jetbrains.kotlin:kotlin-stdlib:2.1.0"
     implementation "androidx.core:core-ktx:1.13.1"
+    
+    // REQUIRED for Material You / Dynamic Colors
+    implementation "com.google.android.material:material:1.12.0"
+    implementation "androidx.appcompat:appcompat:1.7.0"
 }

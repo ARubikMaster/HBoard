@@ -9,8 +9,8 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.VIBRATE" />
-11-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:4:5-66
-11-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:4:22-63
+11-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:5:5-66
+11-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:5:22-63
 12
 13    <permission
 13-->[androidx.core:core:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/c75be4b2d48aed3e59123f936b29b3b9/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
@@ -24,93 +24,131 @@
 17-->[androidx.core:core:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/c75be4b2d48aed3e59123f936b29b3b9/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:6:5-22:19
-20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/c75be4b2d48aed3e59123f936b29b3b9/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
-21        android:debuggable="true"
-22        android:extractNativeLibs="true"
-23        android:label="HBoard Go"
-23-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:7:9-34
-24        android:theme="@android:style/Theme.NoTitleBar" >
-24-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:8:9-56
-25        <service
-25-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:10:9-21:19
-26            android:name="com.example.keyboard.MyKeyboardService"
-26-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:11:13-46
-27            android:exported="true"
-27-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:14:13-36
-28            android:label="HBoard Go"
-28-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:12:13-38
-29            android:permission="android.permission.BIND_INPUT_METHOD" >
-29-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:13:13-70
-30            <intent-filter>
-30-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:15:13-17:29
-31                <action android:name="android.view.InputMethod" />
-31-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:16:17-67
-31-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:16:25-64
-32            </intent-filter>
-33
-34            <meta-data
-34-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:18:13-20:50
-35                android:name="android.view.im"
-35-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:19:17-47
-36                android:resource="@xml/method" />
-36-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:20:17-47
-37        </service>
+19-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:7:5-37:19
+20        android:allowBackup="true"
+20-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:11:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.13.1] /home/gregory/.gradle/caches/9.2.0/transforms/c75be4b2d48aed3e59123f936b29b3b9/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="true"
+24        android:icon="@android:drawable/sym_def_app_icon"
+24-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:9:9-58
+25        android:label="HBoard"
+25-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:8:9-31
+26        android:supportsRtl="true"
+26-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:12:9-35
+27        android:theme="@style/Theme.MyKeyboard" >
+27-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:10:9-48
+28        <activity
+28-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:14:9-22:20
+29            android:name="com.example.keyboard.OnboardingActivity"
+29-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:15:13-47
+30            android:exported="true"
+30-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:16:13-36
+31            android:label="HBoard Setup" >
+31-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:17:13-41
+32            <intent-filter>
+32-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:18:13-21:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:19:17-69
+33-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:19:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:20:17-77
+35-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:20:27-74
+36            </intent-filter>
+37        </activity>
 38
-39        <provider
-39-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
-40            android:name="androidx.startup.InitializationProvider"
-40-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
-41            android:authorities="com.example.keyboard.androidx-startup"
-41-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
-42            android:exported="false" >
-42-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
-43            <meta-data
-43-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-44                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-44-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-45                android:value="androidx.startup" />
-45-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-46        </provider>
+39        <service
+39-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:24:9-35:19
+40            android:name="com.example.keyboard.MyKeyboardService"
+40-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:25:13-46
+41            android:exported="true"
+41-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:28:13-36
+42            android:label="HBoard"
+42-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:26:13-35
+43            android:permission="android.permission.BIND_INPUT_METHOD" >
+43-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:27:13-70
+44            <intent-filter>
+44-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:29:13-31:29
+45                <action android:name="android.view.InputMethod" />
+45-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:30:17-67
+45-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:30:25-64
+46            </intent-filter>
 47
-48        <receiver
-48-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-49            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-49-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-50            android:directBootAware="false"
-50-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-51            android:enabled="true"
-51-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-52            android:exported="true"
-52-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-53            android:permission="android.permission.DUMP" >
-53-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-54            <intent-filter>
-54-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-55                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-55-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-55-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-56            </intent-filter>
-57            <intent-filter>
-57-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-58                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-58-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-58-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-59            </intent-filter>
-60            <intent-filter>
-60-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-61                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-61-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-61-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-62            </intent-filter>
-63            <intent-filter>
-63-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-64                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-64-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-64-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/dea0bf0828a9d402c07f2ae3fd4b32c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-65            </intent-filter>
-66        </receiver>
-67    </application>
-68
-69</manifest>
+48            <meta-data
+48-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:32:13-34:50
+49                android:name="android.view.im"
+49-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:33:17-47
+50                android:resource="@xml/method" />
+50-->/home/gregory/Documents/Projects/go/keyboard/android/src/main/AndroidManifest.xml:34:17-47
+51        </service>
+52
+53        <provider
+53-->[androidx.emoji2:emoji2:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/6f14b41b97a61e693af783f10f832fac/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+54            android:name="androidx.startup.InitializationProvider"
+54-->[androidx.emoji2:emoji2:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/6f14b41b97a61e693af783f10f832fac/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+55            android:authorities="com.example.keyboard.androidx-startup"
+55-->[androidx.emoji2:emoji2:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/6f14b41b97a61e693af783f10f832fac/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+56            android:exported="false" >
+56-->[androidx.emoji2:emoji2:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/6f14b41b97a61e693af783f10f832fac/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+57            <meta-data
+57-->[androidx.emoji2:emoji2:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/6f14b41b97a61e693af783f10f832fac/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+58                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+58-->[androidx.emoji2:emoji2:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/6f14b41b97a61e693af783f10f832fac/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+59                android:value="androidx.startup" />
+59-->[androidx.emoji2:emoji2:1.3.0] /home/gregory/.gradle/caches/9.2.0/transforms/6f14b41b97a61e693af783f10f832fac/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+60            <meta-data
+60-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/gregory/.gradle/caches/9.2.0/transforms/928e27fc7f2660b62ad006f73e2524e0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+61                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+61-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/gregory/.gradle/caches/9.2.0/transforms/928e27fc7f2660b62ad006f73e2524e0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+62                android:value="androidx.startup" />
+62-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/gregory/.gradle/caches/9.2.0/transforms/928e27fc7f2660b62ad006f73e2524e0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+63            <meta-data
+63-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+65                android:value="androidx.startup" />
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+66        </provider>
+67
+68        <receiver
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+69            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+70            android:directBootAware="false"
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+71            android:enabled="true"
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+72            android:exported="true"
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+73            android:permission="android.permission.DUMP" >
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+74            <intent-filter>
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+75                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+76            </intent-filter>
+77            <intent-filter>
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+78                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+79            </intent-filter>
+80            <intent-filter>
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+81                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+82            </intent-filter>
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+84                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/gregory/.gradle/caches/9.2.0/transforms/6772d0cec8a301546014a0cf0e792d6e/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+85            </intent-filter>
+86        </receiver>
+87    </application>
+88
+89</manifest>
