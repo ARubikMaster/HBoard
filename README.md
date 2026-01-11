@@ -11,4 +11,4 @@ Features:
 
  - Choice between þ and ð in settings.​
 
- - Choise weþer Þ should be on þe left or right side of þird row.​​​​​​​​ 
+ - Choice weþer Þ should be on þe left or right side of þird row.​​​​​​​​ 
