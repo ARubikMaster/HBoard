@@ -11,7 +11,6 @@ import android.os.Handler
 import android.os.Looper
 import android.os.VibrationEffect
 import android.os.Vibrator
-import android.util.TypedValue
 import android.view.ContextThemeWrapper
 import android.view.View
 import android.view.inputmethod.EditorInfo
@@ -97,7 +96,17 @@ class MyKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLis
 
     private fun loadKeyboardLayouts() {
         val isOnRight = prefs.getBoolean("thorn_on_right", false)
-        qwertyKeyboard = if (isOnRight) AndroidKeyboard(this, R.xml.qwerty_right) else AndroidKeyboard(this, R.xml.qwerty_left)
+        val useEth = prefs.getBoolean("use_eth_instead", false)
+
+        // Select the specific XML resource based on preferences
+        val layoutRes = when {
+            isOnRight && useEth -> R.xml.qwerty_right_eth
+            isOnRight && !useEth -> R.xml.qwerty_right_thorn
+            !isOnRight && useEth -> R.xml.qwerty_left_eth
+            else -> R.xml.qwerty_left_thorn
+        }
+
+        qwertyKeyboard = AndroidKeyboard(this, layoutRes)
         symbolsKeyboard = AndroidKeyboard(this, R.xml.symbols)
         mathKeyboard = AndroidKeyboard(this, R.xml.mathsymbols)
         
@@ -107,16 +116,11 @@ class MyKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLis
 
     private fun updateKeyLabels() {
         val isShifted = shiftState > 0
-        val isEth = prefs.getBoolean("use_eth_instead", false)
-        val thornLabel = if (isEth) (if (isShifted) "Ð" else "ð") else (if (isShifted) "Þ" else "þ")
-        
         keyboardView?.isShifted = isShifted
 
         val allKeyboards = listOf(qwertyKeyboard, symbolsKeyboard, mathKeyboard)
         allKeyboards.forEach { kb ->
             kb?.keys?.forEach { key ->
-                if (key.codes.contains(254)) key.label = thornLabel
-
                 // Update Shift icons specifically based on state
                 if (key.codes[0] == -1) {
                     val iconRes = when (shiftState) {
@@ -144,7 +148,8 @@ class MyKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLis
             check(if (prefs.getBoolean("use_eth_instead", false)) R.id.radio_th else R.id.radio_þ)
             setOnCheckedChangeListener { _, checkedId ->
                 prefs.edit().putBoolean("use_eth_instead", checkedId == R.id.radio_th).apply()
-                updateKeyLabels()
+                // Re-load the full layout to update the key codes/popups correctly
+                loadKeyboardLayouts()
             }
         }
 
@@ -214,11 +219,8 @@ class MyKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLis
             -4 -> ic.sendKeyEvent(android.view.KeyEvent(android.view.KeyEvent.ACTION_DOWN, android.view.KeyEvent.KEYCODE_ENTER))
             32 -> ic.commitText(" ", 1)
             else -> {
-                val res = if (primaryCode == 254 && prefs.getBoolean("use_eth_instead", false)) {
-                    if (shiftState > 0) "Ð" else "ð"
-                } else {
-                    GoLib.processKey(primaryCode.toLong(), shiftState > 0)
-                }
+                // Character processing via the Go library
+                val res = GoLib.processKey(primaryCode.toLong(), shiftState > 0)
                 ic.commitText(res, 1)
                 
                 if (shiftState == 1) {
@@ -239,7 +241,15 @@ class MyKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLis
         }
     }
 
-    override fun onText(p0: CharSequence?) {}
+    override fun onText(text: CharSequence?) {
+        val ic = currentInputConnection ?: return
+        ic.commitText(text, 1)
+        if (shiftState == 1) {
+            shiftState = 0
+            updateKeyLabels()
+        }
+    }
+
     override fun swipeLeft() {}
     override fun swipeRight() {}
     override fun swipeDown() {}

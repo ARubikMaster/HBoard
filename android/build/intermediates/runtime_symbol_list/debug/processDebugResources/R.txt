@@ -6781,6 +6781,8 @@ int styleable ViewStubCompat_android_inflatedId 2
 int xml mathsymbols 0x7f110000
 int xml method 0x7f110001
 int xml popup 0x7f110002
-int xml qwerty_left 0x7f110003
-int xml qwerty_right 0x7f110004
-int xml symbols 0x7f110005
+int xml qwerty_left_eth 0x7f110003
+int xml qwerty_left_thorn 0x7f110004
+int xml qwerty_right_eth 0x7f110005
+int xml qwerty_right_thorn 0x7f110006
+int xml symbols 0x7f110007

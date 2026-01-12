@@ -32,16 +32,16 @@
         "source": "com.example.keyboard-main-33:/drawable/ic_enter.xml"
     },
     {
-        "merged": "com.example.keyboard-debug-31:/xml_qwerty_right.xml.flat",
-        "source": "com.example.keyboard-main-33:/xml/qwerty_right.xml"
-    },
-    {
         "merged": "com.example.keyboard-debug-31:/xml_mathsymbols.xml.flat",
         "source": "com.example.keyboard-main-33:/xml/mathsymbols.xml"
     },
     {
         "merged": "com.example.keyboard-debug-31:/drawable_key_accent_bg.xml.flat",
         "source": "com.example.keyboard-main-33:/drawable/key_accent_bg.xml"
+    },
+    {
+        "merged": "com.example.keyboard-debug-31:/xml_qwerty_right_thorn.xml.flat",
+        "source": "com.example.keyboard-main-33:/xml/qwerty_right_thorn.xml"
     },
     {
         "merged": "com.example.keyboard-debug-31:/layout_popup_layer.xml.flat",
@@ -52,6 +52,10 @@
         "source": "com.example.keyboard-main-33:/drawable/popup_container_bg.xml"
     },
     {
+        "merged": "com.example.keyboard-debug-31:/xml_qwerty_left_eth.xml.flat",
+        "source": "com.example.keyboard-main-33:/xml/qwerty_left_eth.xml"
+    },
+    {
         "merged": "com.example.keyboard-debug-31:/drawable_ic_shift.xml.flat",
         "source": "com.example.keyboard-main-33:/drawable/ic_shift.xml"
     },
@@ -60,12 +64,16 @@
         "source": "com.example.keyboard-main-33:/drawable/ic_shift_caps.xml"
     },
     {
+        "merged": "com.example.keyboard-debug-31:/xml_qwerty_left_thorn.xml.flat",
+        "source": "com.example.keyboard-main-33:/xml/qwerty_left_thorn.xml"
+    },
+    {
         "merged": "com.example.keyboard-debug-31:/xml_popup.xml.flat",
         "source": "com.example.keyboard-main-33:/xml/popup.xml"
     },
     {
-        "merged": "com.example.keyboard-debug-31:/xml_qwerty_left.xml.flat",
-        "source": "com.example.keyboard-main-33:/xml/qwerty_left.xml"
+        "merged": "com.example.keyboard-debug-31:/xml_qwerty_right_eth.xml.flat",
+        "source": "com.example.keyboard-main-33:/xml/qwerty_right_eth.xml"
     },
     {
         "merged": "com.example.keyboard-debug-31:/drawable_ic_backspace.xml.flat",

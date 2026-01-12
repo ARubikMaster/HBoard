@@ -5121,6 +5121,8 @@ styleable ViewStubCompat android_id android_layout android_inflatedId
 xml mathsymbols
 xml method
 xml popup
-xml qwerty_left
-xml qwerty_right
+xml qwerty_left_eth
+xml qwerty_left_thorn
+xml qwerty_right_eth
+xml qwerty_right_thorn
 xml symbols
